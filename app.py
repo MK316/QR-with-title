@@ -26,7 +26,7 @@ def generate_qr_code(url, title):
     
     # Draw the title on the image
     draw = ImageDraw.Draw(result_image)
-    font_path = "dejavu-sans-bold.ttf"  # Ensure the font path is correct
+    font_path = "font/dejavu-sans-bold.ttf"  # Ensure the font path is correct
     font = ImageFont.truetype(font_path, 24)  # Use a specific font size
     text_width, text_height = draw.textsize(title, font=font)
     text_x = (image_width - text_width) / 2  # Center the text
